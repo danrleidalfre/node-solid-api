@@ -25,6 +25,6 @@
 ## Requisitos não funcionais
 
 - [x] A senha do usuário precisa ser criptografada;
-- [ ] Os dados da aplicação precisam persistir em banco de dados (PostgreSQL)
+- [x] Os dados da aplicação precisam persistir em banco de dados (PostgreSQL)
 - [ ] Todas listas de dados precisam estar paginadas com 20 itens por página;
 - [ ] O usuário deve ser identificado por um JWT;
