@@ -16,7 +16,7 @@ describe('Register Use Case', () => {
   it('should be able to register', async () => {
     const { user } = await sut.execute({
       name: 'Test',
-      email: 'test@test.com',
+      email: 'tests@tests.com',
       password: '123456',
     })
 
@@ -26,7 +26,7 @@ describe('Register Use Case', () => {
   it('should hash user password', async () => {
     const { user } = await sut.execute({
       name: 'Test',
-      email: 'test@test.com',
+      email: 'tests@tests.com',
       password: '123456',
     })
 
@@ -36,7 +36,7 @@ describe('Register Use Case', () => {
   })
 
   it('should not be able to register with same email', async () => {
-    const email = 'test@test.com'
+    const email = 'tests@tests.com'
 
     await sut.execute({
       name: 'Test',

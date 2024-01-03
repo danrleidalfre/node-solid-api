@@ -16,7 +16,7 @@ describe('Get User Profile Use Case', () => {
   it('should to able to get user profile', async () => {
     const createdUser = await usersRepository.create({
       name: 'Test',
-      email: 'test@test.com',
+      email: 'tests@tests.com',
       password_hash: await hash('123456', 6),
     })
 
